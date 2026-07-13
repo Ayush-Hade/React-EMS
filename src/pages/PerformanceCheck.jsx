@@ -24,7 +24,7 @@ const PerformanceCheck = () => {
                 const failed = elem.tasks.filter(e => e.failed==true).length
                 const completed = elem.tasks.filter(e => e.completed==true).length
                     return (
-                        <div key={idx} className='h-100 lg:h-70 w-85 border-2 border-white rounded-2xl flex flex-col gap-4 p-4'>
+                        <div key={idx} className='h-100 lg:h-70 w-full md:w-[350px] border-2 border-white rounded-2xl flex flex-col gap-4 p-4'>
                             <div className='flex gap-4 p-4 border-2 border-white rounded-2xl overflow-x-auto scrollbar-none flex-nowrap'>
                                 <h4 className='shrink-0'>id : {elem.id}</h4>
                                 <h4 className='shrink-0'>email : {elem.email}</h4>

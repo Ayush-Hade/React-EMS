@@ -21,7 +21,7 @@ const CreateEmployees = (props) => {
         <button className='border-2 border-white rounded-2xl h-10 w-40' onClick={() => {
             navigate(-1)
         }}>Back</button>
-        <div className='border-2 border-white rounded-2xl h-100 w-100'>
+        <div className='border-2 border-white rounded-2xl h-100 w-[95%] sm:w-[500px] mb-4'>
             <form onSubmit={(e) => {
                 e.preventDefault()
                 const obj = {...userData}

@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     
-        <div className='h-screen w-full bg-black text-white flex justify-center items-center p-4'>
+        <div className='min-h-screen w-full bg-black text-white flex justify-center items-center p-3 md:p-8'>
           <Routes>
               <Route path='/' element={<Login loginHandler={loginHandler}/>} />
               <Route path='/admin' element={<AdminDashboard email={emailPerson}/>} />

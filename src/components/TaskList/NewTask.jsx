@@ -25,11 +25,11 @@ const NewTask = (props) => {
   
     return (
   
-      <div className='h-75 w-85 border-2 border-white  rounded-2xl overflow-x-auto p-4 flex gap-4 scrollbar-none'>
+      <div className='h-75 w-[300px] md:w-[340px] border-2 border-white  rounded-2xl overflow-x-auto p-5 flex gap-4 scrollbar-none'>
         {tempObj.tasks.map((elem, idx) => {
           if(elem.newTask == true) 
             return (
-              <div key={idx} className='border-2 border-white rounded-2xl h-65 w-65 flex flex-col justify-center items-center p-4 gap-4 shrink-0 bg-yellow-200'>
+              <div key={idx} className='border-2 border-white rounded-2xl min-w-[320px] flex flex-col justify-center items-center p-4 gap-4 shrink-0 bg-yellow-200'>
   
                 <div className='h-10 w-full border-2 border-white flex justify-between items-center rounded-2xl px-4'>
                   <h3 className='border-2 border-white bg-red-500 rounded-2xl px-2 text-black'>{elem.category}</h3>

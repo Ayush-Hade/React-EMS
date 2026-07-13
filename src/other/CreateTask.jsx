@@ -15,8 +15,8 @@ const CreateTask = () => {
 
 
   return (
-    <div className='h-90 w-full border-2 border-white rounded-2xl flex justify-between items-center px-4'>
-        <div className='flex justify-center items-center '>
+    <div className='w-full border-2 border-white rounded-2xl p-4'>
+        <div className='w-full'>
         <form onSubmit={async (e) => {
 
             e.preventDefault();
@@ -41,9 +41,9 @@ const CreateTask = () => {
             setCategory('')
             setTaskTitle('')
 
-        }} className='flex gap-10'>
+        }} className='flex flex-col lg:flex-row gap-8 w-full'>
 
-            <div className='border-2 border-white h-80 w-140 rounded-2xl flex flex-col justify-center items-start p-4 ml-12'>
+            <div className='border-2 border-white min-h-[350px] w-full lg:w-1/2 rounded-2xl flex flex-col justify-center items-start p-4 ml-0'>
                 <h5>Task Title</h5>
                 <input required value={taskTitle} onChange={(e) => {
                     setTaskTitle(e.target.value)
@@ -65,11 +65,11 @@ const CreateTask = () => {
                 }} className='border-2 border-white h-10 w-full rounded-2xl p-1 px-2' type="text" placeholder='Design, Dev, etc'/>
             </div>
 
-            <div className='border-2 border-white h-80 w-140 rounded-2xl flex flex-col justify-start items-start p-4'>
+            <div className='border-2 border-white min-h-[350px] w-full lg:w-1/2 rounded-2xl flex flex-col justify-start items-start p-4'>
                 <h5>Description</h5>
                 <textarea required value={taskDescription} onChange={(e) => {
                     setTaskDescription(e.target.value)
-                }}  className='border-2 border-white h-10 w-full rounded-2xl' name="" id=""></textarea> <br />
+                }}  className='border-2 border-white h-40 w-full rounded-2xl' name="" id=""></textarea> <br />
 
                 <button className='border-2 border-white h-10 w-full rounded-2xl'>Create Task</button>
             </div>

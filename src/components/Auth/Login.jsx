@@ -10,7 +10,7 @@ const Login = ({loginHandler}) => {
   
 
   return (
-    <div className='h-120 w-100 border-2 border-white rounded-2xl'>
+    <div className='h-120 w-[95%] sm:w-[450px] border-2 border-white rounded-2xl p-8'>
         <h1 className='text-center font-bold text-2xl mt-10'>Log In</h1>
         <form onSubmit={(e) => {
           e.preventDefault();

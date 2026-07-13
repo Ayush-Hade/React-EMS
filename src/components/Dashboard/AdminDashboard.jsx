@@ -15,12 +15,12 @@ const AdminDashboard = (props) => {
   
 
   return (
-    <div className='h-full w-full border-2 border-white rounded-2xl flex flex-col p-4 gap-4'>
-        <div className='flex gap-4'>
+    <div className='w-full max-w-7xl min-h-screen border-2 border-white rounded-2xl flex flex-col gap-6 p-4 md:p-6 mx-auto'>
+        <div className='flex flex-wrap gap-3'>
           <Header email={props.email}/>
-          <Link className='border-2 border-white rounded-2xl bg-green-300 text-black text-sm font-bold text-center pt-2' to='/create'>Add Employees</Link>
-          <Link className='border-2 border-white rounded-2xl bg-green-300 text-black text-sm font-bold text-center pt-2' to='/delete'>Delete Employees</Link>
-          <Link className='border-2 border-white rounded-2xl bg-green-300 text-black text-sm font-bold text-center pt-2' to='/performance'>Performance Check</Link>
+          <Link className='px-4 py-2 text-center rounded-xl bg-green-300 text-black font-semibold' to='/create'>Add Employees</Link>
+          <Link className='px-4 py-2 text-center rounded-xl bg-green-300 text-black font-semibold' to='/delete'>Delete Employees</Link>
+          <Link className='px-4 py-2 text-center rounded-xl bg-green-300 text-black font-semibold' to='/performance'>Performance Check</Link>
         </div>
         <CreateTask/>
         <AllTask />
