@@ -22,10 +22,10 @@ const AllTask = () => {
           {userData.employees.map((elem) => {
             return elem.tasks.map((e, idx) => {
               return (
-                  <div key={idx} className='h-12 w-full border-2 border-white rounded-2xl shrink-0 flex justify-between items-center px-4'>
-                    <h1>{elem.email}</h1>
-                    <h1>{e.taskTitle}</h1>
-                    <h1>{e.active == true ? 'Accepted' : e.completed == true ? 'Completed' : e.failed == true ? 'Failed' : e.newTask == true ? 'New Task' : 'Error'}</h1>
+                  <div key={idx} className='h-12 w-full border-2 border-white rounded-2xl shrink-0 flex justify-between items-center px-4 overflow-x-auto scrollbar-none gap-4'>
+                    <h1 className='shrink-0'>{elem.email}</h1>
+                    <h1 className='shrink-0'>{e.taskTitle}</h1>
+                    <h1 className='shrink-0'>{e.active == true ? 'Accepted' : e.completed == true ? 'Completed' : e.failed == true ? 'Failed' : e.newTask == true ? 'New Task' : 'Error'}</h1>
                   </div>
               )
             })

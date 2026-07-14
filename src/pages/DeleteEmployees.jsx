@@ -18,7 +18,7 @@ const DeleteEmployees = () => {
   console.log(adminPass)
     
   return (
-    <div className='h-full w-full border-2 border-white rounded-2xl flex justify-center items-center'>
+    <div className='h-full w-full border-2 border-white rounded-2xl flex justify-center items-center mx-4'>
         <div className='h-3/4 w-1/2 border-2 border-white rounded-2xl flex flex-col justify-center items-center gap-4 m-4'>
             <h1 className='text-center font-bold text-2xl'>Delete Employees</h1>
             <button onClick={(e) => navigate(-1)} className='h-1/12 w-[35%] md:w-[200px] rounded-2xl border-2 border-white'>Back</button>

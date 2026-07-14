@@ -31,7 +31,7 @@ const TaskListNumbers = (props) => {
   
 
   return (
-    <div className='h-35 w-full border-2 border-white rounded-2xl flex gap-4 justify-center flex-wrap overflow-x-auto items-center px-4 scrollbar-none'>
+    <div className='h-35 w-full border-2 border-white rounded-2xl flex gap-4 justify-center flex-wrap overflow-x-auto items-center p-4 scrollbar-none'>
 
         <div className='border-2 border-white rounded-2xl w-full sm:w-[220px] py-7 text-center shrink-0 bg-orange-300'>
             <h1>{active}</h1>

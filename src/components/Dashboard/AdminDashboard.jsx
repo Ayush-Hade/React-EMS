@@ -15,7 +15,7 @@ const AdminDashboard = (props) => {
   
 
   return (
-    <div className='w-full max-w-7xl min-h-screen border-2 border-white rounded-2xl flex flex-col gap-6 p-4 md:p-6 mx-auto'>
+    <div className='w-full max-w-7xl min-h-screen border-2 border-white rounded-2xl flex flex-col gap-6 p-2 m-4'>
         <div className='flex flex-wrap gap-3'>
           <Header email={props.email}/>
           <Link className='px-4 py-2 text-center rounded-xl bg-green-300 text-black font-semibold' to='/create'>Add Employees</Link>

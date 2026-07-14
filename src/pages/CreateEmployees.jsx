@@ -16,7 +16,7 @@ const CreateEmployees = (props) => {
   const [password, setPassword] = useState('')
 
   return (
-    <div className='border-2 border-white rounded-2xl h-full w-full flex flex-col justify-center items-center gap-10'>
+    <div className='border-2 border-white rounded-2xl h-full w-full flex flex-col justify-center items-center gap-10 mx-4'>
         <h1 className='text-center font-bold text-2xl mt-4'>Employee Creation</h1>
         <button className='border-2 border-white rounded-2xl h-10 w-40' onClick={() => {
             navigate(-1)
