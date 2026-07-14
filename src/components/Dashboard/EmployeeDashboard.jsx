@@ -8,7 +8,7 @@ import { AuthContext } from '../../context/AuthProvider'
 const EmployeeDashboard = (props) => {
 
   return (
-    <div className='min-h-screen w-full border-2 border-white rounded-2xl flex flex-col p-4 gap-4 mx-4'>
+    <div className='min-h-screen w-full border-2 border-white rounded-2xl flex flex-col p-4 gap-4 m-0.4 justify-center items-center'>
         <Header email={props.email}/>
         <TaskListNumbers email={props.email}/>
         <TaskList email={props.email}/>
